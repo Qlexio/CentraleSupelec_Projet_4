@@ -1,0 +1,22 @@
+### Grouper les données
+En premier lieu, il faut grouper le jeu de données par client, ces derniers étant notre cible.
+
+Pour donner forme au jeu de données, je vais effectuer différentes actions en fonction des features:
+* Somme:
+  * categories, types de paiements et vendeurs encodés
+  * features associées à une somme
+  * "installments_size"
+  * "nb_score" donnés
+* Min:
+  * features associées à une valeur min
+  * "days_last_purchase"
+* Max:
+  * features associées à une valeur max
+* Mean:
+  * features associées à une moyenne
+  * Moyenne des scores initiaux "init_score" et de leurs évolutions "diff_score"
+  * "delivering_time"
+* Size:
+  * nombre d'achat par mois, trimestre, semestre, an et sur toute la durée (fréquence)
+
+Je devrais pouvoir droper les features "order_id", "purchase_y_m", "purchase_y_q", "purchase_y_s", "purchase_y", "purchase_date"(?) après * Size
